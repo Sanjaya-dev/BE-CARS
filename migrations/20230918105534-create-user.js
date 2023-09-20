@@ -15,10 +15,11 @@ module.exports = {
       fullname: {
         type: Sequelize.STRING
       },
-      role: {
-        type: Sequelize.ENUM,
-        values: ['user','admin']
-      },
+      // role: {
+      //   type: Sequelize.ENUM({
+      //     values: ['pengguna','superadmin']
+      //   })
+      // },
       emil: {
         type: Sequelize.STRING
       },

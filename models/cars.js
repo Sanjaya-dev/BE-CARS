@@ -12,14 +12,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      Cars.belongsTo(models.car_category,{foreignKey: 'car_category'});
+      // Cars.belongsTo(models.Car_category,{foreignKey: 'car_category'});
 
     }
   }
   Cars.init({
     car_name: DataTypes.STRING,
     rent_per_day: DataTypes.FLOAT,
-    car_category: DataTypes.INTEGER,
+    car_category: DataTypes.STRING,
     car_photo: DataTypes.STRING
   }, {
     sequelize,

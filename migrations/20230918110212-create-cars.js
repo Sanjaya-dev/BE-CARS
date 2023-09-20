@@ -16,12 +16,8 @@ module.exports = {
         type: Sequelize.FLOAT,
       },
       car_category: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.STRING,
         allowNull: false,
-        references: {
-          model: "Car_categories",
-          key: "id",
-        },
       },
       car_photo: {
         type: Sequelize.STRING,

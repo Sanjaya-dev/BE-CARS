@@ -2,21 +2,21 @@
   "development": {
     "username": "ferna",
     "password": "123",
-    "database": "db_cars",
+    "database": "db_cars_v1",
     "host": "localhost",
     "dialect": "postgres"
   },
   "test": {
     "username": "ferna",
     "password": "123",
-    "database": "db_cars",
+    "database": "db_cars_v1",
     "host": "localhost",
     "dialect": "postgres"
   },
   "production": {
     "username": "ferna",
     "password": "123",
-    "database": "db_cars",
+    "database": "db_cars_v1",
     "host": "localhost",
     "dialect": "postgres"
   }
