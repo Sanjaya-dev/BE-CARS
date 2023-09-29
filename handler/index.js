@@ -9,6 +9,13 @@ function handleListCard(req,res){
     })
 }
 
+function handleListCarFindOne(req,res){
+    Cars.findAll({where : {car_category: req.params.category}})
+    .then(cars => {
+        res.status(200).json(cars)
+    })
+}
+
 async function handleAddCar(req,res){
    // const fileBase64 = req.file.buffer.toString("base64");
     // const file = `data:${req.file.mimetype};base64,${fileBase64}`;
@@ -48,7 +55,7 @@ async function handleUpdateCar(req,res){
         },{where: {id: req.params.id}})
 
         .then(cars => {
-            res.status(200).json("berhasil")
+            res.status(200).json(cars)
         })
         .catch(err => {
             res.status(422).json("Tidak dapat mengupload")
@@ -85,5 +92,6 @@ module.exports = {
     handleListCard,
     handleAddCar,
     handleUpdateCar,
-    handleDeletCar
+    handleDeletCar,
+    handleListCarFindOne
 }
